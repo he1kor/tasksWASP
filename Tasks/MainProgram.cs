@@ -6,7 +6,7 @@ public static class Program
     private static string[][] programs =
     {
         new []{ "Magical Numbers","Diagonal number matrix","Draw triangle with points","Pascal's triangle" },
-        new []{ "To bit code","Test" }
+        new []{ "Read int as binary","Sum of binary","4 shorts to long","Long to 4 shorts","Switch 2 bytes in long" }
     };
     public static void Main(string[] args)
     {
@@ -43,6 +43,21 @@ public static class Program
                 return true;
             case "1.4":
                 runningProgram = new _1._4.Program();
+                return true;
+            case "2.1":
+                runningProgram = new _2._1.Program();
+                return true;
+            case "2.2":
+                runningProgram = new _2._2.Program();
+                return true;
+            case "2.3":
+                runningProgram = new _2._3.Program();
+                return true;
+            case "2.4":
+                runningProgram = new _2._4.Program();
+                return true;
+            case "2.5":
+                runningProgram = new _2._5.Program();
                 return true;
             default:
                 return false;
