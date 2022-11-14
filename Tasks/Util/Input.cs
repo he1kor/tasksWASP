@@ -1,8 +1,28 @@
 ﻿namespace Tasks.Util;
 
-public class Input
+public static class Input
 {
-    public static int ReadInt(String question)
+    public static double ReadDouble(string question)
+    {
+        while (true)
+        {
+            Console.WriteLine(question);
+            try
+            {
+                return double.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Not double!");
+            }
+            catch (OverflowException)
+            {
+                Console.WriteLine("Too large!");
+            }
+        }   
+    }
+    
+    public static int ReadInt(string question)
     {
         while (true)
         {
@@ -22,7 +42,7 @@ public class Input
         }
     }
 
-    public static uint ReadNotNegativeInt(String question)
+    public static uint ReadNotNegativeInt(string question)
     {
         int notNegativeValue;
         while (true)
@@ -52,7 +72,7 @@ public class Input
             }
         }
     }
-    public static long ReadLong(String question)
+    public static long ReadLong(string question)
     {
         while (true)
         {
@@ -71,7 +91,8 @@ public class Input
             }
         }
     }
-    public static int ReadIntInRange(String question,int beginValue,int endValue)
+    
+    public static int ReadIntInRange(string question,int beginValue,int endValue)
     {
         int integerValue;
         while (true)
