@@ -16,14 +16,12 @@ public struct SubarrayExpression
             Console.WriteLine(creatingQuestion);
             string subarrayExpressionString = Console.ReadLine();
             if (subarrayExpressionString == null) continue;
-            
-            const int firstValueIndex = 0;
 
-            if (CheckValueCorrectness(subarrayExpressionString,findColons(subarrayExpressionString))) break;
+            if (CheckValueCorrectness(subarrayExpressionString,FindColons(subarrayExpressionString))) break;
         }
     }
 
-    private Tuple<int?, int?, int?> findColons(string subarrayExpressionString)
+    private Tuple<int?, int?, int?> FindColons(string subarrayExpressionString)
     {
         int? secondValueIndex = null;
         int? thirdValueIndex = null;
