@@ -19,7 +19,7 @@ public struct SubarrayExpression
             
             const int firstValueIndex = 0;
 
-            if (checkValueCorrectness(subarrayExpressionString,findColons(subarrayExpressionString))) break;
+            if (CheckValueCorrectness(subarrayExpressionString,findColons(subarrayExpressionString))) break;
         }
     }
 
@@ -37,7 +37,7 @@ public struct SubarrayExpression
 
         return new Tuple<int?, int?,int?>(0,secondValueIndex,thirdValueIndex);
     }
-    private bool checkValueCorrectness(string subarrayExpressionString, Tuple<int?, int?, int?> indexes)
+    private bool CheckValueCorrectness(string subarrayExpressionString, Tuple<int?, int?, int?> indexes)
     {
         if (indexes.Item1 == null || indexes.Item2 == null || indexes.Item3 == null)
         {
