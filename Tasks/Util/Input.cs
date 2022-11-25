@@ -21,6 +21,18 @@ public static class Input
             }
         }   
     }
+
+    public static string ReadNotEmptyString(string question)
+    {
+        while (true)
+        {
+            Console.Write(question);
+
+            string? answer = Console.ReadLine();
+            if (answer != null)
+                return answer;
+        }
+    }
     
     public static int ReadInt(string question)
     {
