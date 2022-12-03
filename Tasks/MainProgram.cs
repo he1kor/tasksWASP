@@ -8,7 +8,8 @@ public static class Program
         new []{ "Magical Numbers","Diagonal number matrix","Draw triangle with points","Pascal's triangle" },
         new []{ "Read int as binary","Sum of binary","4 shorts to long","Long to 4 shorts","Switch 2 bytes in long" },
         new []{ "Vector norm","Minimum by index","Subarray expression" },
-        new []{ "Car park"}
+        new []{ "Car park"},
+        new []{ "Disk store"}
     };
     public static void Main(string[] args)
     {
@@ -72,6 +73,9 @@ public static class Program
                 return true;
             case "4.1":
                 runningProgram = new _4._1.Program();
+                return true;
+            case "5.1":
+                runningProgram = new _5._1.Program();
                 return true;
             default:
                 return false;

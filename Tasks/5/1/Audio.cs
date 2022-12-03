@@ -23,6 +23,6 @@ public class Audio : Disk
 
     public override string ToString()
     {
-        return Name + " (" + Genre + ") by" + Artist + " recorded in " + RecordingStudio + ". Number of songs: " + SongsAmount + "; burn count: " + BurnCount;
+        return Name + " (" + Genre + ") by " + Artist + " recorded in " + RecordingStudio + ". Number of songs: " + SongsAmount + "; burn count: " + BurnCount;
     }
 }
